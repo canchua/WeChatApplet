@@ -1,0 +1,24 @@
+<!--pages/history/history.wxml-->
+
+<view class='explain'>
+  <view class='explainText'>说明：每日胎动次数=最近一小时计数*12</view>
+</view>
+
+<view class='wideDivision'></view>
+
+<scroll-view class='history' scroll-y='true'>
+  <block wx:for="{{tableArray}}" wx:key="{{index}}">
+    <view class='historyText'>
+      <view wx:if="{{index == 0 || (tableArray[index].DateNum != tableArray[index - 1].DateNum)}}">
+        <view class='historyRow'  data-index='{{index}}'>
+          <view class='historyRowText'>
+            <view class='date'>{{item.AllDate}}</view>
+            <view class='hour'>一小时内<text class='num'>{{item.Hour}}次</text></view>
+            <view class='day'>每日胎动<text class='num'>{{item.Day}}次</text></view>
+          </view>
+        </view>
+        <view wx:if='{{index != tableArray.length - 1}}' class='division'></view>
+      </view>
+    </view>
+  </block>
+</scroll-view>

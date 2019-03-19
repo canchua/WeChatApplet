@@ -1,0 +1,56 @@
+<!--pages/history/history.wxml-->
+
+
+<view class='table'>
+    <view class='tableHead'>
+      <view class='tableHeadText'>
+        <view class='tableHeadText1'>
+        开始时间</view>
+        <view class='tableHeadText2'>
+        持续时间</view>
+        <view class='tableHeadText3'>
+        间隔时间</view>
+      </view>
+    </view>
+    <!-- <view class='firstDivision'></view> -->
+    <scroll-view class='tableMessage' scroll-y>
+      
+      <block wx:for="{{tableArray}}" wx:key="{{index}}">
+      <!-- <view data-index='{{index}}' bindlongpress='Delete'> -->
+          <view wx:if="{{index == 0 || (tableArray[index].dateNum != tableArray[index - 1].dateNum)}}" class='tableDate' data-index='{{index}}'>
+              <view class='dateText'>{{item.Date}}</view>
+            </view>
+          <view wx:if="{{index != 0 && tableArray[index].gapSecond > 1800 && tableArray[index].dateNum == tableArray[index - 1].dateNum}}" class='tableRow' data-index='{{index}}'>
+            <view class='minutetext'>~间隔时间超过半小时~</view>
+            
+          </view>
+          <view class='division' wx:if="{{index != 0 && tableArray[index].gapSecond > 1800 && tableArray[index].dateNum == tableArray[index - 1].dateNum}}" data-index='{{index}}'></view>
+          <view class='tableRow' data-index='{{index}}' bindlongpress='Delete'>
+            <view class='tableRowText'>
+              <view class='firstCol'>
+                <view class='box'></view>
+                <view class='tableColumn1'>{{item.Start}}</view>
+              </view>
+              <view class='col'></view>
+              <view class='tableColumn2'>{{item.Last}}</view>
+              <view class='col'></view>
+              <view class='tableColumn3'>{{item.Gap}}</view>
+            </view>
+            
+          </view>
+          <view class='division'></view>
+        <!-- </view> -->
+      </block>
+    </scroll-view>
+    
+</view>
+
+<!-- <view class='button'> -->
+  <view class='clear-button'>
+     <image class='clearButton' src='/images/icon-clear.png'   bindtap='clearBtn'></image>
+  </view>
+<!-- </view> -->
+   
+
+
+

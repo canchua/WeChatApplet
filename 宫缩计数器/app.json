@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/history/history",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#FF6969",
+    "navigationBarTitleText": "宫缩记录器",
+    "navigationBarTextStyle":"white"
+  }
+}

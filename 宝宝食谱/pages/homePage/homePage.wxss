@@ -1,0 +1,72 @@
+
+.background{
+
+  width: 100%;
+  height: 100%;
+}
+.searchBg{
+ width: 100%;
+ height: 50px;
+ background-color: #F5F5F5;
+ box-sizing: border-box;
+ padding: 8px 15px 8px 15px;
+}
+.searchView{
+ height: 100%;
+ background-color: white;
+ border-radius: 2px;
+ text-align: center;
+}
+
+.searchIcon{
+
+  width: 16px;
+  height: 16px;
+  margin-top: 9px;
+  display: inline-block;
+
+}
+.searchLabel{
+
+   width: 40px;
+   height: 100%;
+   display: inline-block;
+   font-size: 14px;
+   vertical-align: top;
+   line-height:34px;
+   font-style: PingFangSC;
+   color: #BBBBBB;
+}
+
+.collection {
+
+  width: 100%;
+  height: calc(100% - 50px);
+
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start; 
+}
+
+.items{
+  width: 33.3%;
+  display: block;
+  text-align: center;
+  overflow:hidden;
+
+ }
+
+.itemsView{
+  width: 56px;
+  height: 56px;
+  margin-top: calc(50% - 28px);
+}
+.nameLabel{
+  width: 56px;
+  height: 25px;
+  font-size: 15px;
+  color: #333333;
+}
+.test{
+  width: 100%;
+}

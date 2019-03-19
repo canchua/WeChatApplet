@@ -1,0 +1,19 @@
+{
+  "pages":[
+    "pages/homePage/homePage",
+    "pages/listPage/listPage",
+    "pages/detailsPage/detailsPage",
+    "pages/searchPage/searchPage",
+    "pages/secondSearchPage/secondSearchPage",
+    "pages/item/item",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#FF6969",
+    "navigationBarTitleText": "宝宝辅食",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh": true
+  }
+}

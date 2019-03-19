@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/history/history",
+    "pages/explain/explain",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#FF6969",
+    "navigationBarTitleText": "胎动计数器",
+    "navigationBarTextStyle":"white"
+  }
+}

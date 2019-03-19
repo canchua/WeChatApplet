@@ -1,0 +1,58 @@
+<!--pages/home/home.wxml-->
+
+<view class='homePage'>
+  
+  <view class='time'>
+    <view class='clockBlock'>
+      <view class='clockTime'>
+        {{clock}}
+      </view>
+    </view>
+    <view class='timeMassage'>
+      <view class='timeGap'>
+        <view class='theGap'>
+        间隔：{{gap}}</view>
+      </view>
+      <view class='theHistory' bindtap='toHistory'>历史记录</view>
+    </view>
+  </view>
+
+  <view class='table'>
+    <view class='tableHead'>
+      <view class='tableHeadText'>
+        <view class='tableHeadText1'>
+        开始时间</view>
+        <view class='tableHeadText2'>
+        持续时间</view>
+        <view class='tableHeadText3'>
+        间隔时间</view>
+      </view>
+    </view>
+    <view class='division'></view>
+    <scroll-view class='tableMessage' scroll-y='true' scroll-top='{{scrolltop}}'>
+      <block wx:for="{{tableArray}}" wx:for-item="item" wx:key="index">
+        <view class='tableRow' data-index='{{index}}' bindlongpress='Delete'>
+          <view class='tableRowText'>
+            <view class='firstCol'>
+              <view class='box'></view>
+              <view class='tableColumn1'>{{item.Start}}</view>
+            </view>
+            <view class='col'></view>
+            <view class='tableColumn2'>{{item.Last}}</view>
+            <view class='col'></view>
+            <view class='tableColumn3'>{{item.Gap}}</view>
+          </view>
+          
+        </view>
+        <view class='division'></view>
+      </block>
+    
+    </scroll-view>
+  </view>
+
+</view>
+
+<view class='button'>
+      <image class='buttonImage' src='/images/start.png' bindtap='startBtn' hidden='{{startHidden}}'></image>
+      <image class='buttonImage' src='/images/end.png' bindtap='endBtn' hidden='{{endHidden}}'></image>
+</view>

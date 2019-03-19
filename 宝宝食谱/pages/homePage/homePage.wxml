@@ -1,0 +1,30 @@
+<view class="background">
+
+<view class='searchBg' >
+<view class='searchView' bindtap='srarchAction'>
+
+
+<image class='searchIcon' src='http://pc5p3978f.bkt.clouddn.com/Image/yunfushipu/icon-sousuo.png'></image>
+<view  class='searchLabel'>搜索</view>
+
+
+</view>
+</view>
+
+
+<view class="collection">
+ 
+    <block wx:for="{{classifyArray}}" wx:for-item="dataItem" wx:key="index">
+    
+      <view class='items' bindtap='clickItem' data-index='{{index}}'>
+         
+         <view class='test'><image class='itemsView'  src='{{dataItem.img_url}}'></image></view>
+        
+        <text class='nameLabel'>{{dataItem.title}}</text>
+      </view>
+    </block>
+
+</view>
+
+
+</view>

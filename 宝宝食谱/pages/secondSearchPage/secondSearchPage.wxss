@@ -1,0 +1,2 @@
+@import "../../wxSearchView/wxSearchView.wxss";
+@import "../../pages/listPage/listPage.wxss";

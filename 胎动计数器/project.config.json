@@ -1,0 +1,53 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.0.4",
+	"appid": "wx82a7971443cc535e",
+	"projectname": "%E8%83%8E%E5%8A%A8%E8%AE%A1%E6%95%B0%E5%99%A8",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 1,
+			"list": [
+				{
+					"id": 0,
+					"name": "explain",
+					"pathName": "pages/explain/explain",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "history",
+					"pathName": "pages/history/history",
+					"query": ""
+				}
+			]
+		}
+	}
+}

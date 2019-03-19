@@ -1,0 +1,26 @@
+<import src="../../item/item.wxml"/>
+<view class="main">
+
+
+  <block wx:for="{{dataList}}" wx:for-item="dataItem" >
+       
+
+   <view class="adapter_item" bindtap='listClickItem' data-index="{{index}}">
+
+    <image src="{{dataItem.thum_img_url}}" class="item_img" mode='aspectFill'></image>    
+    <view class="item_content">
+        <text class="item_id">{{dataItem.title}}</text>
+        <text class="item_title">{{dataItem.description}}</text>
+    </view>
+
+  </view>
+   <view class='itemLine' ></view>
+
+
+  </block>
+
+ 
+
+
+
+</view>

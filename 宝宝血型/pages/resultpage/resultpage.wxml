@@ -1,0 +1,19 @@
+<view class='all'>
+  <view class='block'>
+    <view class='all-title'>血型结果</view>
+    <view class='first-block'>
+      <view class='title'>  
+        <image class='img' src='/images/heart.png'></image>
+        <view class='weui-cells__title'>宝宝的血型可能为</view>
+      </view>
+      <view class='text'>{{maybe}}</view>
+    </view>
+    <view class='second-block'>
+      <view class='title'>
+        <image class='img' src='/images/heart.png'></image>
+        <view class='weui-cells__title'>不可能为</view>
+      </view>
+      <view class='text'>{{other}}</view>
+    </view>
+  </view>
+</view>

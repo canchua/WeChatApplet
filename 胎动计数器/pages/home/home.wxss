@@ -1,0 +1,240 @@
+/* pages/home/home.wxss */
+
+page{
+  height: 100%;
+  font-family: PingFangSC;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.count{
+  height: calc(100% * 320 / 603);
+  width: 100%;
+  background: #FF6969;
+}
+
+.timeRow{
+  height: 28px;
+  margin-top: 15px;
+  /* margin-top: calc(100% * 4800 / 49446 - 735px / 82); */
+  font-size: 20px;
+  color: #FFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.date{
+  height: 100%;
+  width: 76px;
+  margin-left: 20px;
+}
+
+.countdown{
+  height: 100%;
+  width: 57px;
+  margin-right: 20px;
+}
+
+.start{
+  height: 210px;
+  width: 100%;
+  /* margin-top: calc(100% * 4800 / 49446 - 735px / 82); */
+  margin-top: 27px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.startButton1{
+  height: 100%;
+  width: 210px;
+  border-radius: 50%;
+  background: #FF6465;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.startButton2{
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  background: #FF7273;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.startButton3{
+  height: 160px;
+  width: 160px;
+ 
+  border-radius: 50%;
+  background: radial-gradient(circle, #FFF 57%, #FFF2F2 67%,  #FBECEC 77%, #FFEDED 90%);
+  /* background: #FFF; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.startText{
+  height: 42px;
+  width: 62px;
+  margin-top: 59px;
+  font-size: 30px;
+  color: #FF6969;
+}
+
+.restartText{
+  height: 42px;
+  width: 124px;
+  margin-top: 61px;
+  font-size: 26px;
+  color: #FF6969;
+  text-align: center;
+}
+
+.countText{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: #FF6969;
+}
+
+.countTime{
+  height: 70px;
+  width: 86px;
+  margin-top: 24px;
+  margin-left: 37px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.firstWord{
+  font-size: 16px;
+  margin-top: 36px;
+}
+
+.secondWord{
+  font-size: 50px;
+}
+
+.thirdWord{
+  font-size: 16px;
+  /* margin-top: 36px; */
+  margin-bottom: 12px;
+  /* align-self: flex-end; */
+}
+
+.countPrompt{
+  height: 19px;
+  width: 92px;
+  font-size: 13px;
+  margin-top: 6px;
+  margin-left: 35px;
+}
+
+.combine{
+  width: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.plus{
+  height: 19px;
+  width: 19px;
+  font-size: 13px;
+}
+
+.plusText{
+  height: 100%;
+  width: 100%;
+}
+
+.message{
+  height: calc(100% * 283 / 603);
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  justify-content:  space-between;
+}
+
+.advice{
+  height: 84px;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 15px;
+}
+
+.adviceTitle{
+  height: 24px;
+  font-size: 17px;
+}
+
+.adviceRow1{
+  height: 21px;
+  margin-top: 10px;
+  font-size: 15px;
+  color: #999;
+}
+
+.adviceRow2{
+  height: 21px;
+  margin-top: 8px;
+  font-size: 15px;
+  color: #999;
+}
+
+.buttonRow{
+  height: 41px;
+  margin-bottom: 55px;
+  /* align-self: flex-end; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #FF6969;
+  font-size: 16px;
+}
+
+.button1{
+  height: 100%;
+  width: 120px;
+  border-style: solid;
+  border-color: #FF6969;
+  border-width: 1px;
+  border-radius: 20px;
+  margin-left: 20px;
+}
+
+.button2{
+  height: 100%;
+  width: 120px;
+  border-style: solid;
+  border-color: #FF6969;
+  border-width: 1px;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+
+.explain{
+  height: 23px;
+  width: 66px;
+  margin-top: 9px;
+  margin-left: 27px;
+}
+
+.history{
+  height: 23px;
+  width: 66px;
+  margin-top: 9px;
+  margin-left: 27px;
+}

@@ -1,0 +1,37 @@
+<import src="../../wxParse/wxParse.wxml"/>
+
+<view class="background">
+
+<!-- <image mode='aspectFill' class='topImage' src='{{img_url}}'></image> -->
+
+
+<view class="centerView">
+
+<view class='titleView'>{{title}}</view>
+<view class='shareView'>
+
+<view class='line'></view>
+<button class='shareButton' style="background-image:url(http://pc5p3978f.bkt.clouddn.com/Image/yunfushipu/icon-fenxiang.png" bindtap='shareAction' open-type="share" plain='true'></button>   
+</view>
+
+
+
+</view>
+
+<view class='white'>
+<view class='test1'>
+<view class='ingredientsContent'>
+
+<template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+
+</view>
+</view>
+
+
+</view>
+
+
+
+</view>
+
+<!-- <web-view src="{{article}}"></web-view> -->

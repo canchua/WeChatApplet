@@ -1,0 +1,44 @@
+<view class="weui-search-bar">
+   <view class="weui-search-bar__form">
+    <view class="weui-search-bar__box">
+      <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+      <input type="text" class="weui-search-bar__input" placeholder="请输入查询内容" value="{{value}}" bindinput="wxSearchInput" bindconfirm="wxSearchConfirm" />
+      <view class="weui-icon-clear" wx:if="{{wxSearchData.value.length > 0}}" bindtap="wxSearchClear">
+        <icon type="clear" size="14"></icon>
+      </view>
+    </view>
+  </view>
+    <view class="weui-search-bar__cancel-btn" bindtap="wxSearchConfirm">
+         <text wx:if="{{wxSearchData.value.length>0||value.length<=0}}" data-key='search'>搜索</text>
+         <text wx:else data-key='back'>返回</text>
+     </view>
+</view>
+
+<view class="wxSearch" style="'block';height:{{wxSearchData.view.seachHeight}}px;top:{{wxSearchData.view.barHeight}}px;">
+
+
+ <scroll-view>
+  <block wx:for="{{dataList}}" wx:for-item="dataItem" >
+       
+
+   <view class="adapter_item" bindtap='listClickItem' data-index="{{index}}">
+
+    <image src="{{dataItem.thum_img_url}}" class="item_img" mode='aspectFill'></image>    
+    <view class="item_content">
+        <text class="item_id">{{dataItem.title}}</text>
+        <text class="item_title">{{dataItem.description}}</text>
+    </view>
+
+  </view>
+   <view class='itemLine' ></view>
+
+
+  </block>
+
+ </scroll-view>
+ 
+
+
+
+
+</view>

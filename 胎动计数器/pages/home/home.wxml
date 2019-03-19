@@ -1,0 +1,68 @@
+<!--pages/home/home.wxml-->
+<view class='count'>
+  <view class='timeRow'>
+    <view class='date'>{{date}}</view>
+    <view class='countdown'>{{time}}</view>
+  </view>
+  <view class='start'>
+    <view class='startButton1'>
+      <view class='startButton2'>
+      <!-- +++++++++++++++++++++++++++++++++ -->
+      <!-- <view class='startButton3'>
+          <view class='startText' bindtap='startCount' hidden='{{startHidden}}'>开始</view>
+          <view class='restartText' bindtap='startCount' hidden='{{restartHidden}}'>重新计数</view>
+          <view class='countText' bindtap='gapCount' hidden='{{gapHidden}}'>
+            <view class='countTime'>
+              <view class='firstWord'>第</view>
+              <view class='secondWord'>{{count}}</view>
+              <view class='combine'>
+                <view class='plus' hidden='{{plusHidden}}'>+1</view>
+                <view class='thirdWord'>次</view>
+              </view>
+            </view>
+            <view class='countPrompt'>动一次，点一次</view>
+          </view>
+        </view> -->
+      <!-- 开始 -->
+        <view class='startButton3' bindtap='startCount' hidden='{{startHidden}}'>
+          <view class='startText'>开始</view>
+        </view>
+        <!-- 重新计数 -->
+        <view class='startButton3' bindtap='startCount' hidden='{{restartHidden}}'>
+          <view class='restartText'>重新计数</view>
+        </view>
+        <!-- 记一次胎动 -->
+        <view class='startButton3' bindtap='gapCount' hidden='{{gapHidden}}'>
+          <view class='countText'>
+            <view class='countTime'>
+              <view class='firstWord'>第</view>
+              <view class='secondWord'>{{count}}</view>
+              <view class='combine'>
+                <view class='plus'><text class='plusText' animation="{{animationData}}" hidden="{{plusHidden}}">+1</text></view>
+                <view class='thirdWord'>次</view>
+              </view>
+            </view>
+            <view class='countPrompt'>动一次，点一次</view>
+          </view>
+        </view>
+
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class='message'>
+  <view class='advice'>
+    <view class='adviceTitle'>操作建议</view>
+    <view class='adviceRow1'>1、建议一天记录早中晚三次哦~</view>
+    <view class='adviceRow2'>2、胎动次数较少，可试着站起来走一走唤醒宝宝</view>
+  </view>
+  <view class='buttonRow'>
+    <view class='button1' bindtap='toExplain'>
+      <view class='explain'>胎动说明</view>
+    </view>
+    <view class='button2' bindtap='toHistory'>
+      <view class='history'>历史记录</view>
+    </view>
+  </view>
+</view>

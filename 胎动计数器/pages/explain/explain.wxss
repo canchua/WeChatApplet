@@ -1,0 +1,49 @@
+/* pages/explain/explain.wxss */
+
+page{
+  display: flex;
+  flex-direction: column;
+  font-family: PingFangSC;
+}
+
+.title1{
+  height: 24px;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: row;
+  color: #FF6969;
+  margin-left: 15px;
+  font-size: 17px;
+}
+
+.title1Text{
+
+}
+
+.text{
+  height: 220px;
+  width: calc(100% - 30px);
+  margin-top: 10px;
+  margin-left: 15px;
+  color: #666;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.title2{
+  height: 24px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  color: #FF6969;
+  margin-left: 15px;
+  font-size: 17px;
+}
+
+.title2Text{
+
+}
+
+.text2{
+
+}

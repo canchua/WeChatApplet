@@ -1,0 +1,96 @@
+.background{
+  width: 100%;
+  height: 100%;
+    overflow:hidden;
+
+}
+.topImage{
+  width: 100%;
+ 
+}
+.centerView{
+  width: 100%;
+ display:inline-block;
+ padding-left: 15px;
+ padding-right: 15px;
+ padding-top: 20px;
+}
+.titleView{
+  display: inline-block;
+  width: 65%;
+  margin-left: 5%;
+  font-size: 22px;
+  font-style: PingFangSC;
+  color: #333333;
+}
+.shareView{
+  display: inline-block;
+  width: calc(25% - 15px);
+  height: 20px;
+  vertical-align: top;
+  line-height: 20px;
+  text-align: right;
+  margin-top:5px;
+overflow:hidden;
+
+}
+.shareButton{
+
+     display: inline-block;
+
+  width: 17px;
+  height: calc(100% - 3px);
+  vertical-align: top;
+  margin-top:1.5px;
+  border: none;
+  background-color: white;
+  color: white;
+  background-size:17px 17px;
+  background-repeat: no-repeat;
+  border-radius:0px;
+
+}
+.shareButton::after {
+  border: none;
+}
+button[plain]{
+    border: none;
+
+}
+
+.line{
+    display: inline-block;
+
+  line-height: 100%;
+  height:100%;
+  width: 1px;
+  margin-right: 25px;
+  margin-top: 0px;
+  background-color:#FF6969; 
+}
+.white{
+  width: 100%;
+  margin-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+
+}
+
+.ingredientsContent{
+  width: 100%;
+  color: #666666;
+  font-size: 15px;
+  word-wrap: break-word;
+}
+.practiceContent{
+  width: 100%;
+  margin-top: 20px;
+  color: #666666;
+  font-size: 15px;
+  word-wrap: break-word;
+
+}
+.test1{
+  width: 100%;
+}
